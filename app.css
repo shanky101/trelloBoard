@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 83%, 53%);
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+}
+
+.navbar {
+    display: flex;
+    background-color: hsl(202, 100%, 95%);
+    min-height: 40px;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 6px solid hsl(218, 100%, 17%);
+}
+
+h4 {
+    font-size: 28px;
+}
+
+.btn-primary {
+    background-color: hsl(210, 83%, 53%);
+    color: hsl(216, 33%, 97%);
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: hsl(350, 94%, 28%);
+    color: hsl(216, 33%, 97%);
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-short {
+    padding: 1px 6px;
+    font-size: 14px;
+}
+
+.btn-small {
+    padding: 2px 6px;
+}
+
+.btn-medium {
+    padding: 4px 12px;
+}
+
+.btn-large {
+    padding: 6px 18px;
+}
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 8px;
+    background-color: hsl(216, 33%, 97%);
+    border-radius: 6px;
+    min-width: 275px;
+    min-height: 40px;
+    font-size: 14px;
+    margin: 4px 0;
+    transition: transform .05s; 
+    cursor: pointer;
+}
+
+.cardOuter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-del {
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.10);
+    transition: all .2s ease-in-out;
+}
+
+.cardOuter:hover .card-del {
+    display: block;
+    z-index: 2;
+}
+
+.cardContainer {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 8px;
+}
+
+.containerBody {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: hsl(214, 15%, 91%);
+    border-radius: 6px;  
+}
+
+.containerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-weight: 600;
+    font-size: 20px;
+    max-width: 300px;
+    border-left: 2px solid black;
+    padding: 1px 4px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.containerLabel {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4px;
+    margin-right: auto;
+}
+
+.headerLeft {
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+    min-height: 40px;
+    padding: 5px;
+}
+
+.headerRight {
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    min-height: 40px;
+    padding: 5px;
+}
+
